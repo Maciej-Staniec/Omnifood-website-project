@@ -6,6 +6,8 @@
 
 We are a technology company first, but with a major focus on consumer well-being through a healthy diet. Most people are very busy with their jobs, family and friends, and other important activities, which doesn't leave much time for cooking. This might lead to a poor diet and lasting health consequences. We want to solve this problem by using an AI-centric approach. Users can use our app to select their diet and foods they like and dislike, and our AI algorithm will create a custom and individual weekly meal plan. But we don't stop there. We partner with restaurants and other cooking partners to actually cook and deliver all meals from the generated meal plans, in selected cities. All this will be packed up in a monthly subscription, where users can choose between receiving one or two meals per day, every single day of the month.
 
+///////////////////////// Hero section
+
 ## Branding
 
 Headline: A healthy meal delivered to your door, every single day
@@ -13,8 +15,6 @@ Headline: A healthy meal delivered to your door, every single day
 Brand color: #e67e22
 
 ## Omnifood Website Content
-
-///////////////////////// Hero section
 
 ### Summary
 
@@ -31,7 +31,7 @@ Pause anytime: Going on vacation? Just pause your subscription, and we refund un
 
 //////////////////// How it works section
 
-### How Omnifood works (steps component)
+### How Omnifood works (steps component in Z pattern (too much text to put next to each other) + app photos)
 
 [Show big app images]
 
@@ -59,7 +59,7 @@ Kid-friendly
 
 ////////////////// Meals section
 
-### Sample meals (preview and profile cards component)
+### Sample meals (preview and profile cards component + meals photos)
 
 **Omnifood AI chooses from 5,000+ recipes**
 
@@ -81,7 +81,7 @@ Meal 2: Avocado Salad
 
 ////////////////// Call to action section
 
-### We offer a free sample meal (form component)
+### We offer a free sample meal (form component + eating.jpg)
 
 [Create simple form for users to sign up]
 
@@ -108,24 +108,27 @@ Complete: $649 per month
 
 //////// Gallery section
 
-### Photo gallery (gallery component)
+### Photo gallery (gallery component + gallery photos)
 
 [Use the 12 photos we provided]
 
 ////////////////// Testimonial section
 
-### Customer testimonials (customer testimonials component)
+### Customer testimonials (customer testimonials component + customers photos)
 
 [Photos of customers included]
 
 Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical. (Dave Bryson)
+
 The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore! (Ben Hadley)
+
 Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now! (Steve Miller)
+
 I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic. (Hannah Smith)
 
 /////////////////// Featured-in section
 
-### Section with logos of featured publications [see images] (featured-in logos component)
+### Section with logos of featured publications [see images] (featured-in logos component + logos photos)
 
 /////////////////// Footer section
 
@@ -168,17 +171,18 @@ Privacy & terms
 - Featured in
 - Footer
 
-## Sections (changed order)
+## Sections (adjusted order + combinations)
 
 - Navigation
 - Hero
-- Features
-- How it works
-- Diets
-- Meals
-- Pricing
-- Gallery
-- Testimonials
-- Featured in
-- CTA (Call-To-Action)
+- Featured in (logos)
+- How it works (Features are boring to read and don't explain much in this example. Instead, we will use How it works section first as this explains better how everything works)
+- Meals + list of diets
+
+# Here are 3 sections to convince the user to buy the product
+
+- Testimonial + Gallery (this combination will push customers to buy the product)
+- Pricing + Features (it will explain users what they are signing up for)
+- CTA (Call-To-Action) - make customers to sign up
+
 - Footer
