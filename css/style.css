@@ -46,8 +46,8 @@ html {
   /* font-size: 10px; */
 
   /* 
-  The solution with font-size: 10px has its drawbacks. Some people may had to change their default web browser font size for accessibility reasons. Also, be aware that different web browsers have different default values. In this case it is best to scale the default rem using %, not px.
-  Instead of using a fixed value like 10px, we can use 62.5%.
+  The solution with font-size: 10px has its drawbacks. Some people may had to change their default web browser font size for accessibility reasons. Also, be aware that different web browsers have different default values. In this case it is best to scale the default rem using %, not px. What if their default font size is 20px not 10?
+  Instead of using a fixed value like 10px, we can use 62.5%. That will apply our scaling to their default font size.
   10 px / 16 px = 0.625
   0.625 * 100 = 62.5 %
   */
@@ -59,15 +59,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.hero-img {
-  width: 100%;
 }
 
 /* 
@@ -84,9 +75,28 @@ body {
 
   
   REM stands for Root Element Font-size. 
-  By default 1 REM is equal to 16px. That's because we haven't specified the size on the HTML element.
-  Why use REM? Well, it is powerful for creating a reponsive website layouts. By using rem and changing its default size, we can change the size of the whole layout (if we use rem as a value for width, height and size).
+  By default 1 REM is equal to 16px. As you possibly are aware, we change the size of REM on the HTML element to 62.5%.
+  Why use REM for font sizes? Well, it is powerful for creating reponsive website layouts. By using rem and changing its default size, we can change the size of the whole layout (if we use the rem scaling value for width, height and size properties).
  
-
   font-size: 3rem;
 } */
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+}
+.hero-description {
+}
