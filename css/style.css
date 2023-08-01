@@ -21,6 +21,7 @@ SHADES:
 ACCENTS:
 GREYS: 
 #555
+#333
 
 --- 03. IMAGES
 --- 04. ICONS
@@ -81,11 +82,18 @@ body {
   font-size: 3rem;
 } */
 
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 9.6rem;
 }
 
 .hero-img {
@@ -97,6 +105,26 @@ body {
   font-weight: 700;
   line-height: 1.1;
   color: #333;
+  /* We're not going to scale up or down the letter spacing. On top of that it is insignificant. Therefore we use the px value. */
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
 }
 .hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.btn:active {
 }
