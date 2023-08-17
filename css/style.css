@@ -77,6 +77,29 @@ body {
 /* General reusable components */
 /*******************************/
 
+.container {
+  /* 1140 px or 1200 px are standard widths of a browser viewport. */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 800;
@@ -133,6 +156,7 @@ body {
 /*******************************/
 /* Website Header */
 /*******************************/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -252,21 +276,11 @@ Check the Selector specifity of the following element by hovering over the selec
 /*******************************/
 
 .section-how {
-  padding: 9.6px 0;
-  background-color: orangered;
+  padding: 20px 0;
 }
 
-.section-how div:nth-child(1) {
-  background-color: yellow;
-}
-.section-how div:nth-child(2) {
-  background-color: blue;
-}
-.section-how div:nth-child(3) {
-  background-color: green;
-}
-.section-how div:nth-child(4) {
-  background-color: violet;
+.step-img {
+  width: 35%;
 }
 
 /* 
