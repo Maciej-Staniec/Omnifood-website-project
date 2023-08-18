@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -277,6 +277,37 @@ Check the Selector specifity of the following element by hovering over the selec
 
 .section-how {
   padding: 20px 0;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  color: #333;
+  margin-bottom: 9.6rem;
+}
+
+.step-number {
+  font-size: 7.4rem;
+  color: #ddd;
+  font-weight: 700;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  color: #333;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 .step-img {
