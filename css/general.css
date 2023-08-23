@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* If we use the following font-size of 10 px for rem, this value will be applied across all fonts on the website. */
+
+  /* font-size: 10px; */
+
+  /* 
+  The solution with font-size: 10px has its drawbacks. Some people may had to change their default web browser font size for accessibility reasons. Also, be aware that different web browsers have different default values. In this case it is best to scale the default rem using %, not px. What if their default font size is 20px not 10?
+  Instead of using a fixed value like 10px, we can use 62.5%. That will apply our scaling to their default font size.
+  10 px / 16 px = 0.625
+  0.625 * 100 = 62.5 %
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/*******************************/
+/* General reusable components */
+/*******************************/
+
+.container {
+  /* 1140 px or 1200 px are standard widths of a browser viewport. */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+
+  /* grid-template-rows: 1fr 1fr; */
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #333;
+  font-weight: 700;
+  /* We're not going to scale up or down the letter spacing. On top of that it is insignificant. Therefore we use the px value. */
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: #fff;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  /* Because this CSS rule is for any .btn class, we can add animation to all of our buttons so that when we hover over a button there is going to be a nice transition between the "original" state and the active and hover state. */
+
+  transition: all 500ms;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: transparent;
+
+  /* Trick to add border within the width and height of a button */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  /* To ensure no other margin applies to the element, set the value to !important so it overwrites any style (it has the highest priority).*/
+  margin-right: 1.6rem !important;
+}

@@ -1,158 +1,3 @@
-/* 
-
---- 01. TYPOGRAPHY SYSTEM
-
-FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-**** Font weights:
-Default: 400
-400
-600
-800
-900
-
-
-
-**** Line heights:
-Default: 1
-1.05
-1.6
-
---- 02 COLOURS
-
-MAIN COLOR: #e67e22
-
-TINTS:
-#fdf2e9
-SHADES:
-#cf711f
-ACCENTS:
-GREYS: 
-#555
-#333
-
---- 03. IMAGES
-
---- 04. ICONS
-
---- 05. SHADOWS
-
---- 06. BORDER-RADIUS
-Default: 9px
-
---- 07. WHITESPACE
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* If we use the following font-size of 10 px for rem, this value will be applied across all fonts on the website. */
-
-  /* font-size: 10px; */
-
-  /* 
-  The solution with font-size: 10px has its drawbacks. Some people may had to change their default web browser font size for accessibility reasons. Also, be aware that different web browsers have different default values. In this case it is best to scale the default rem using %, not px. What if their default font size is 20px not 10?
-  Instead of using a fixed value like 10px, we can use 62.5%. That will apply our scaling to their default font size.
-  10 px / 16 px = 0.625
-  0.625 * 100 = 62.5 %
-  */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-/*******************************/
-/* General reusable components */
-/*******************************/
-
-.container {
-  /* 1140 px or 1200 px are standard widths of a browser viewport. */
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
-.grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-
-  /* grid-template-rows: 1fr 1fr; */
-}
-
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 800;
-  line-height: 1.05;
-  color: #333;
-  /* We're not going to scale up or down the letter spacing. On top of that it is insignificant. Therefore we use the px value. */
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  color: #fff;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  font-size: 2rem;
-  text-decoration: none;
-  font-weight: 600;
-  /* Because this CSS rule is for any .btn class, we can add animation to all of our buttons so that when we hover over a button there is going to be a nice transition between the "original" state and the active and hover state. */
-
-  transition: all 500ms;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: transparent;
-
-  /* Trick to add border within the width and height of a button */
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.margin-right-sm {
-  /* To ensure no other margin applies to the element, set the value to !important so it overwrites any style (it has the highest priority).*/
-  margin-right: 1.6rem !important;
-}
-
 /*******************************/
 /* Website Header */
 /*******************************/
@@ -272,37 +117,84 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 /*******************************/
+/* FEATURED IN SECTION */
+/*******************************/
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  /* filter:grayscale(100%) */
+  filter: hue-rotate(90%);
+}
+
+/*******************************/
 /* HOW IT WORKS SECTION */
 /*******************************/
 
 .section-how {
-  padding: 20px 0;
+  padding: 9.6rem 0;
 }
 
-.subheading {
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before {
+  content: "";
   display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #cf711f;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
+  width: 60%;
+  /* the following creates vertical padding based on step-img-box width.*/
+  padding-top: 60%;
+  border-radius: 50%;
+  z-index: -2;
+  background-color: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.heading-secondary {
-  font-size: 4.4rem;
-  color: #333;
-  margin-bottom: 9.6rem;
+.step-img-box::after {
+  content: "";
+  display: block;
+  width: 45%;
+  padding-top: 45%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fae5d3;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .step-number {
-  font-size: 7.4rem;
+  font-size: 8.6rem;
   color: #ddd;
-  font-weight: 700;
-}
-
-.heading-tertiary {
-  font-size: 3rem;
-  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
 }
 
 .step-description {
@@ -320,8 +212,7 @@ Check the Selector specifity of the following element by hovering over the selec
   padding: 100px;
   width: 1000px;
 
-  If we use the max-width property, the child element (.test div) adopts the same width as the parent element (body) in case
-  we make the viewport smaller than its max-width value. If the size of the viewport is smaller than the actual value of the max-width (in this case less than 1000 px) then the element will adapt 100% width of the viewport.
+  If we use the max-width property, the child element (.test div) adopts the same width as the parent element (body) in case we make the viewport smaller than its max-width value. If the size of the viewport is smaller than the actual value of the max-width (in this case less than 1000 px) then the element will adapt 100% width of the viewport.
   
   If we have used the % value instead of px, the element will constantly adapt its size in relation to the viewport, not to its parent element.
   max-width: 1000px;
