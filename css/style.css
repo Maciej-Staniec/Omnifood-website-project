@@ -141,8 +141,7 @@ Check the Selector specifity of the following element by hovering over the selec
 
 .logos img {
   height: 3.2rem;
-  /* filter:grayscale(100%) */
-  filter: hue-rotate(90%);
+  filter: contrast(0%);
 }
 
 /*******************************/
@@ -204,6 +203,43 @@ Check the Selector specifity of the following element by hovering over the selec
 
 .step-img {
   width: 35%;
+}
+
+/*******************************/
+/* MEAL PLAN SECTION */
+/*******************************/
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.tag {
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: #51cf66;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  margin-bottom: 1.2rem;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.meal-attributes {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* 
