@@ -138,3 +138,11 @@ body {
   /* To ensure no other margin applies to the element, set the value to !important so it overwrites any style (it has the highest priority).*/
   margin-right: 1.6rem !important;
 }
+
+strong {
+  font-weight: 500;
+}
+
+.center-text {
+  text-align: center;
+}

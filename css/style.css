@@ -213,14 +213,23 @@ Check the Selector specifity of the following element by hovering over the selec
   padding: 9.6rem 0;
 }
 
+.meal {
+  border-radius: 9px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
 .meal-img {
   width: 100%;
+  border-radius: 9px 9px 0 0;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem;
 }
 
 .tag {
   font-size: 1.2em;
   font-weight: 600;
-  background-color: #51cf66;
   text-transform: uppercase;
   display: inline-block;
   padding: 0.4rem 0.8rem;
@@ -228,11 +237,23 @@ Check the Selector specifity of the following element by hovering over the selec
   margin-bottom: 1.2rem;
 }
 
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
 .meal-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 600;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .meal-attributes {
@@ -242,6 +263,18 @@ Check the Selector specifity of the following element by hovering over the selec
   gap: 2rem;
 }
 
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
 /* 
 .test {
   background-color: red;
