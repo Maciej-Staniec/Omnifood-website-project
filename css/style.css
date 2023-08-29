@@ -214,17 +214,21 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .meal {
-  border-radius: 9px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 9px;
 }
 
 .meal-img {
   width: 100%;
-  border-radius: 9px 9px 0 0;
 }
 
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem;
+}
+
+.meal-tag {
+  display: flex;
+  gap: 0.4rem;
 }
 
 .tag {
@@ -273,6 +277,37 @@ Check the Selector specifity of the following element by hovering over the selec
 .meal-icon {
   height: 2.4rem;
   width: 2.4rem;
+  color: #e67e22;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
   color: #e67e22;
 }
 /* 
