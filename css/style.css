@@ -214,8 +214,15 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
   border-radius: 9px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  transform: translateY(-1.2rem);
 }
 
 .meal-img {
@@ -229,6 +236,7 @@ Check the Selector specifity of the following element by hovering over the selec
 .meal-tag {
   display: flex;
   gap: 0.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .tag {
@@ -238,7 +246,6 @@ Check the Selector specifity of the following element by hovering over the selec
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border-radius: 100px;
-  margin-bottom: 1.2rem;
 }
 
 .tag--vegetarian {
@@ -309,7 +316,45 @@ Check the Selector specifity of the following element by hovering over the selec
 .link:visited {
   text-decoration: none;
   color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  transition: all 0.3s;
 }
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+/*******************************/
+/* TESTIMONIALS SECTION */
+/*******************************/
+.section-testimonials {
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials {
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+}
+
+.gallery {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+}
+
 /* 
 .test {
   background-color: red;
