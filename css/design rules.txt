@@ -32,14 +32,18 @@ MAIN COLOR: #e67e22
 TINTS:
 #fdf2e9
 #fae5d3
+
 SHADES:
 #cf711f
+
 ACCENTS:
+
 GREYS:
-#333;
-#555;
-#ddd;
-#888;
+#333
+#555
+#6f6f6f (lighest gray allowed on #fdf2e9)
+#888
+#ddd
 
 --- 04. IMAGES
 

@@ -49,6 +49,10 @@ body {
   /* grid-template-rows: 1fr 1fr; */
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -139,8 +143,43 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list-item {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
+}
+
 /* **************************************************** */
-/* ================= SETTING CLASSES ================= */
+/* ================= HELPER / SETTING CLASSES ================= */
 /* **************************************************** */
 
 .margin-right-sm {
@@ -152,10 +191,14 @@ body {
   margin-bottom: 4.8rem !important;
 }
 
-strong {
-  font-weight: 500;
+.margin-bottom-big {
+  margin-bottom: 6.4rem;
 }
 
 .center-text {
   text-align: center;
+}
+
+strong {
+  font-weight: 500;
 }
