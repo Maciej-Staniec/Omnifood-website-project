@@ -148,10 +148,6 @@ Check the Selector specifity of the following element by hovering over the selec
 /* HOW IT WORKS SECTION */
 /*******************************/
 
-.section-how {
-  padding: 9.6rem 0;
-}
-
 .step-img-box {
   display: flex;
   align-items: center;
@@ -209,13 +205,9 @@ Check the Selector specifity of the following element by hovering over the selec
 /* MEAL PLAN SECTION */
 /*******************************/
 
-.section-meals {
-  padding: 9.6rem 0;
-}
-
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
-  border-radius: 9px;
+  border-radius: 11px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -355,10 +347,6 @@ Check the Selector specifity of the following element by hovering over the selec
 /* PRICING/FEATURES SECTION */
 /*******************************/
 
-.section-pricing-features {
-  padding: 9.6rem 0;
-}
-
 .pricing-card {
   border-radius: 11px;
   width: 75%;
@@ -458,6 +446,46 @@ Check the Selector specifity of the following element by hovering over the selec
   font-size: 1.8rem;
 }
 
+/*****************************/
+/* CTA SECTION */
+/****************************/
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  min-height: 50rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, #eb984e, #e67e22);
+
+  /* background-image: linear-gradient(90deg, red, #e67e22); */
+
+  /* Default setting */
+  /* background-image: linear-gradient(180deg, red, #e67e22); */
+
+  /* background-image: linear-gradient(270deg, red, #e67e22); */
+
+  /* background-image: linear-gradient(360deg, red, #e67e22); */
+
+  /* background-image: linear-gradient(to right, red, #e67e22); */
+
+  /* background-image: linear-gradient(to left, red, #e67e22); */
+
+  /* background-image: linear-gradient(to top, red, #e67e22); */
+
+  /* Default setting */
+  /* background-image: linear-gradient(to bottom, red, #e67e22); */
+
+  /* background-image: linear-gradient(to left top, red, #e67e22); */
+}
+
+.cta-text-box {
+}
+
+.cta-image-box {
+}
 /* 
 .test {
   background-color: red;

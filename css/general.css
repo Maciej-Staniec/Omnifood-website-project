@@ -69,6 +69,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.section-padding-top-btm {
+  padding: 9.6rem 0;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {

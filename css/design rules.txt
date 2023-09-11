@@ -32,6 +32,8 @@ MAIN COLOR: #e67e22
 TINTS:
 #fdf2e9
 #fae5d3
+#eea564
+#eb984e
 
 SHADES:
 #cf711f
@@ -50,6 +52,8 @@ GREYS:
 --- 05. ICONS
 
 --- 06. SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 
 --- 07. BORDER-RADIUS
 Default: 9px
+Medium: 11px
