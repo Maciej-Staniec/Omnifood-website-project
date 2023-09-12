@@ -482,9 +482,25 @@
         </div>
       </section>
       <section class="section-padding-top-btm">
-        <div class="container cta">
-          <div class="cta-text-box"></div>
-          <div class="cta-image-box"></div>
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <div class="cta-text">
+                <h2 class="heading-secondary">Get your first meal for free!</h2>
+                <p>
+                  Healthy, tasty and hassle-free meals are waiting for you.
+                  Start eating well today. You can cancel or pause anytime. And
+                  the first meal is on us!
+                </p>
+              </div>
+              <div class="cta-form"></div>
+            </div>
+            <!-- Because we specified an image in the CSS file, the html file won't have any elements. That is not ideal for screen readers. There is a mitigation to it. A new property called "role". It should contain "img" value. On top of that, we ought to specify the aria-label value to describe the image. All this is for accessibility reasons. Never forget about visually impaired users. -->
+            <div
+              class="cta-image-box"
+              role="img"
+              aria-label="Woman enjoying food"></div>
+          </div>
         </div>
       </section>
     </main>

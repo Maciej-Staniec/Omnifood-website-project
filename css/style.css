@@ -485,6 +485,14 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .cta-image-box {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.3)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
 /* 
 .test {
