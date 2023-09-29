@@ -512,7 +512,7 @@
                   <label for="select-where">Where did you hear from us?</label>
                   <select id="select-where" required>
                     <option value="">
-                      Please choose one of the following:
+                      Please choose one option:
                     </option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">Youtube video</option>
@@ -524,7 +524,7 @@
                 <button class="btn btn--form">Sign up now</button>
               </form>
             </div>
-            <!-- Because we specified an image in the CSS file, the html file won't have any elements. That is nost ideal for screen readers. There is a mitigation to it. A new property called "role". It should contain "img" value. On top of that, we ought to specify the aria-label value to describe the image. All this is for accessibility reasons. Never forget about visually impaired users. -->
+            <!-- Because we specified an image in the CSS file, the html file won't have any elements. That is nost ideal for screen readers. There is a mitigation to it - a new property called "role". It should contain "img" value. On top of that, we ought to specify the aria-label value to describe the image (so that screen readers read out loud what the image presents to the user). All this is for accessibility reasons. Never forget about visually impaired users. -->
             <div
               class="cta-image-box"
               role="img"
