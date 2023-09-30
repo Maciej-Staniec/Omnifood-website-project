@@ -37,6 +37,7 @@ TINTS:
 
 SHADES:
 #cf711f
+#45260a
 
 ACCENTS:
 
@@ -45,6 +46,7 @@ GREYS:
 #555
 #6f6f6f (lighest gray allowed on #fdf2e9)
 #888
+#aaa
 #ddd
 
 --- 04. IMAGES
