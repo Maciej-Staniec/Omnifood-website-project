@@ -541,10 +541,28 @@ Check the Selector specifity of the following element by hovering over the selec
   color: #aaa;
 }
 
-.cta-form input:focus,
-.cta-form select:focus {
-  outline: none;
+/* .cta-form input:focus,
+.cta-form select:focus,
+.btn--form:focus {
   box-shadow: 0px 0px 4px 4px rgb(255, 255, 255, 0.45);
+} */
+
+/* Quicker way to select above elements */
+.cta *:focus {
+  box-shadow: 0px 0px 4px 4px rgb(255, 255, 255, 0.45);
+}
+
+/*****************************/
+/* FOOTER */
+/****************************/
+
+.footer {
+  padding: 9.6rem 0;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 /* 

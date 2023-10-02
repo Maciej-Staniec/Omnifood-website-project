@@ -16,7 +16,9 @@
   </head>
   <body>
     <header class="header">
-      <img src="img\omnifood-logo.png" alt="Omnifood Logo" class="logo" />
+      <a href="#">
+        <img src="img\omnifood-logo.png" alt="Omnifood Logo" class="logo" />
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#" class="main-nav-link">How it works</a></li>
@@ -511,9 +513,7 @@
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
                   <select id="select-where" required>
-                    <option value="">
-                      Please choose one option:
-                    </option>
+                    <option value="">Please choose one option:</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">Youtube video</option>
                     <option value="podcast">Podcast</option>
@@ -533,6 +533,37 @@
         </div>
       </section>
     </main>
+    <!-- A footer element should be outside the main element as most of the time we want to repeat it across multiple pages on our website. Same with the header element. The main element contains elements that are specific to a page. -->
+    <footer class="footer">
+      <div class="container grid grid--5-cols">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="img/omnifood-logo.png" alt="Omnifood Logo" class="logo" />
+          </a>
+          <p class="copyright">Copyright &copy; 2023 by Omnifood, Inc. All rights reserved.</p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+
+          </address>
+
+          </ul>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li class="footer-link"></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+        </nav>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
