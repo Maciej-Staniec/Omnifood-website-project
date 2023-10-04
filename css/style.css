@@ -567,7 +567,41 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 3.2rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  color: #767676;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.social-link {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  filter: contrast(0%);
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: 8rem;
 }
 
 /* 

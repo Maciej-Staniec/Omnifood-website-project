@@ -45,6 +45,7 @@ GREYS:
 #333
 #555
 #6f6f6f (lighest gray allowed on #fdf2e9)
+#767676
 #888
 #aaa
 #ddd
