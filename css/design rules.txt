@@ -49,6 +49,7 @@ GREYS:
 #888
 #aaa
 #ddd
+#eee
 
 --- 04. IMAGES
 
