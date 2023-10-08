@@ -1,0 +1,31 @@
+/*
+rem and em units are not linked to the html font-size property in media queries. Their default value is 16px, even if we changed it in a CSS file.
+
+1 rem = 1 em = 16px
+
+rem - root font-size
+em - current font-size
+
+Let's cut to the chase.
+We should NOT use rem units for media queries are there are some known bugs.
+Instead we SHOULD use em units.
+*/
+
+/* 
+Remember, we don't want to use px or rem units. We are going to use em values for setting breakpoints.
+
+In order to calculate the em value, we have to divide the desired max-width by 16.
+
+1350 / 16 = 84.375
+*/
+
+/*******************************/
+/* BELOW 1350 px */
+/*******************************/
+
+@media (max-width: 84.375em) {
+  .hero{
+    /* The rem units used in CSS rules have nothing to do with the em units that we use for setting breakpoints. */
+    max-width:120rem;
+  }
+}
