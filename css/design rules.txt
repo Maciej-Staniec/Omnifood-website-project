@@ -52,8 +52,12 @@ GREYS:
 #eee
 
 --- 04. IMAGES
+4.8rem
+6.4rem
 
 --- 05. ICONS
+3.2rem
+2.4rem
 
 --- 06. SHADOWS
 box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);

@@ -20,12 +20,229 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 */
 
 /*******************************/
-/* BELOW 1350 px */
+/* BELOW 1356 px */
 /*******************************/
-
-@media (max-width: 84.375em) {
-  .hero{
+/* 9px/16 =  */
+@media (max-width: 84.75em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .hero {
     /* The rem units used in CSS rules have nothing to do with the em units that we use for setting breakpoints. */
-    max-width:120rem;
+    /* max-width: 120rem; */
+  }
+
+  /* .heading-primary {
+    font-size: 4.4rem;
+  } */
+}
+
+/*******************************/
+/* BELOW 1218 px */
+/*******************************/
+@media (max-width: 76.125em) {
+  /* 9/16 = 0.5625 */
+  html {
+    font-size: 56.25%;
   }
 }
+
+/*******************************/
+/* BELOW 1080 px (LANDSCAPE TABLETS) */
+/*******************************/
+
+@media (max-width: 67.5em) {
+  /* 8/16 = 0.5 */
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .testimonials {
+    row-gap: 3.2rem;
+    column-gap: 4.8rem;
+  }
+
+  .section--cta {
+    padding: 4.8rem 0 9.6rem;
+  }
+
+  .section-padding-top-btm {
+    padding: 8rem 0;
+  }
+
+  .pricing-card {
+    padding: 3.2rem;
+  }
+
+  .plan-name {
+    margin-bottom: 2.4rem;
+  }
+
+  .plan-header {
+    margin-bottom: 3.2rem;
+  }
+
+  .plan-price {
+    font-size: 5.2rem;
+  }
+
+  .plan-sign-up {
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  .meal-title {
+    font-size: 2.2rem;
+  }
+
+  .footer {
+    padding: 6.4rem 0;
+  }
+}
+
+/*******************************/
+/* BELOW 916 px (TABLETS) */
+/*******************************/
+@media (max-width: 57.25em) {
+  .container {
+    /* max-width: 100rem; */
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 6.4rem;
+    row-gap: 9.6rem;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem;
+  }
+
+  .testimonials-main {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .testimonials {
+    row-gap: 6.4rem;
+    column-gap: 8rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing-card{
+    width:85%
+  }
+
+  .cta{
+    grid-template-columns: 55fr 45fr;
+  }
+
+  .cta-form{
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form{
+    margin-top:1.6rem
+  }
+}
+
+/*******************************/
+/* BELOW 720 px */
+/*******************************/
+
+@media (max-width: 45em) {
+  /* 5/16 = 0.3125 */
+  /* html {
+    font-size: 31.25%;
+  } */
+}
+
+/*******************************/
+/* BELOW 666 px */
+/*******************************/
+
+@media (max-width: 41.625em) {
+  /* 4/16 = 0.25 */
+  /* html {
+    font-size: 25%;
+  } */
+}
+
+/*******************************/
+/* BELOW 599 px */
+/*******************************/
+@media (max-width: 37.4375em) {
+}
+
+/*
+
+*********** 02. WHITESPACE ***********
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*********** FONT SIZE SYSTEM (px) ***********
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+*/
