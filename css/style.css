@@ -55,6 +55,25 @@ Check the Selector specifity of the following element by hovering over the selec
   background: #cf711f;
 }
 
+/* MOBILE NAV */
+.btn-mobile-nav {
+  border-style: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="menu-outline"] {
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 /*******************************/
 /* Hero Section */
 /*******************************/
@@ -294,17 +313,16 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .testimonials-main {
-  max-width:120rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 45fr 55fr;
   align-items: center;
-
 }
 
 .testimonials-container {
-  padding-right:3.2rem;
-  padding-left:3.2rem;
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
 }
 
 .testimonials {
@@ -334,8 +352,8 @@ Check the Selector specifity of the following element by hovering over the selec
 .gallery {
   display: grid;
   gap: 1.6rem;
-  padding-right:3.2rem;
-  padding-left:3.2rem;
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
   /* padding: 9.6rem 1.6rem */
 }
 
