@@ -225,12 +225,29 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 
     /* Hiding Navigation */
     /* display:none; */
-    /* the display property does not allow setting transitions at all. */
+    /* the "display" property does not allow setting transitions at all. */
+
+    /* Hide the mobile nav visually */
     opacity: 0;
+
+    /* Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* Hide it from screen readers */
     visibility: hidden;
 
+    /* When the mobile nav is closed, slide it to the right side. */
     transform: translateX(100%);
+
+    /* Animate the slide and buttons */
     transition: all 0.5s ease-in;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0%);
   }
 
   .main-nav-list {
