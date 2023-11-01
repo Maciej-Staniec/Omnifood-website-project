@@ -10,6 +10,7 @@
   background-color: #fdf2e9;
   /* Because we want the header to be sticky later. */
   height: 9.6rem;
+  position:relative;
 }
 .logo {
   height: 2.2rem;
@@ -175,6 +176,7 @@ Check the Selector specifity of the following element by hovering over the selec
   position: relative;
 }
 
+
 .step-img-box::before {
   content: "";
   display: block;
@@ -205,6 +207,11 @@ Check the Selector specifity of the following element by hovering over the selec
   transform: translate(-50%, -50%);
 }
 
+
+.step-img {
+  width: 35%;
+}
+
 .step-number {
   font-size: 8.6rem;
   color: #ddd;
@@ -215,10 +222,6 @@ Check the Selector specifity of the following element by hovering over the selec
 .step-description {
   font-size: 1.8rem;
   line-height: 1.8;
-}
-
-.step-img {
-  width: 35%;
 }
 
 /*******************************/
@@ -351,6 +354,7 @@ Check the Selector specifity of the following element by hovering over the selec
 
 .gallery {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding-right: 3.2rem;
   padding-left: 3.2rem;

@@ -16,6 +16,11 @@ html {
   0.625 * 100 = 62.5 %
   */
   font-size: 62.5%;
+
+  /* To make our Mobile Nav Menu completely disappear once closed, we need to set the "overflow-x" property to hidden. By doing so, we won't be able to scroll our web page horizontally.*/
+  /* This only works if there is nothing absolutely positioned in relation to body. If there is an absolutely positioned element (like our .main-nav element), we need to set the "position" property to relative of its parent element (.header in this case). */
+  /* It is often required to set this property on the html and body elements. */
+  overflow-x: hidden;
 }
 
 body {
@@ -23,6 +28,11 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* To make our Mobile Nav Menu completely disappear once closed, we need to set the "overflow-x" property to hidden. By doing so, we won't be able to scroll our web page horizontally.*/
+  /* This only works if there is nothing absolutely positioned in relation to body. If there is an absolutely positioned element (like our .main-nav element), we need to set the "position" property to relative of its parent element (.header in this case). */
+  /* It is often required to set this property on the html and body elements. */
+  overflow-x: hidden;
 }
 
 /*******************************/
