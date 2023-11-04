@@ -384,6 +384,7 @@ In order to calculate the em value, we have to divide the desired max-width by 1
     grid-template-columns: 1fr;
   }
 
+  /* Even if the element appears to be 1st img in the html code, it is a 2nd element in its parent element. Therefore we need to choose the 2nd element. */
   .step-img-box:nth-child(2) {
     grid-row: 1;
   }
@@ -414,9 +415,6 @@ In order to calculate the em value, we have to divide the desired max-width by 1
     grid-template-columns: 1fr;
   }
 
-  .cta-text-box {
-  }
-
   .cta-image-box {
     height: 48rem;
     grid-row: 1;
@@ -434,6 +432,24 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+
+  .heading-tertiary{
+    font-size:3rem;
+  }
+
+  .hero{
+    padding: 0 1.6rem;
+  }
+
+  .hero-img {
+    width: 95%;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited{
+    padding: 2.4rem 1.6rem;
   }
 
   .logos {
@@ -461,6 +477,10 @@ In order to calculate the em value, we have to divide the desired max-width by 1
     grid-column: span 2;
   }
 
+  .section-featured{
+    padding:4.8rem 0 0
+  }
+
   .diet-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -468,15 +488,102 @@ In order to calculate the em value, we have to divide the desired max-width by 1
     row-gap: 3.2rem;
   }
 
+  .tag{
+    font-size:1.6rem;
+  }
+
+  .meal-title{
+    font-size:3.0rem;
+  }
+
+  .meal-attributes{
+    font-size:2.2rem;
+  }
+
+  /* .list-item{
+    padding-left:8rem;
+  } */
+
+    .pricing-card {
+    justify-self:center;
+    width: 75%;
+    padding: 3.6rem;
+  }
+
   .testimonials {
     grid-template-columns: 1fr;
   }
 
-  /* .gallery {
+  .gallery {
     grid-template-columns: repeat(3, 1fr);
-  } */
+  }
+
+  .cta-text-box{
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+
 }
 
+/*******************************/
+/* BELOW 420 px */
+/* PHONES */
+/*******************************/
+
+
+@media (max-width: 26.25em) {
+
+  .logos{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:1.6rem;
+  }
+
+  .section-padding-top-btm{
+    padding:6.4rem 0;
+  }
+
+    .pricing-card {
+    width: 85%;
+    padding: 2.4rem;
+  }
+
+
+.grid:not(:last-child) {
+    margin-bottom: 6.4rem;
+}
+
+/*******************************/
+/* BELOW 373 px */
+/* PHONES */
+/*******************************/
+
+@media (max-width: 23.3125em) {
+
+  .hero-buttons{
+    display:flex;
+    flex-direction: column;
+    /* max-width:20rem; */
+    align-items:center;
+    gap:1.2rem;
+  }
+
+  .hero-buttons .btn{
+    width:55%;
+  }
+
+    .btn,
+  .btn:link,
+  .btn:visited{
+    padding: 3.2rem 1.6rem;
+  }
+
+  .margin-right-sm{
+    margin-right:0px !important;
+  }
+
+}
 /*
 *********** 02. WHITESPACE ***********
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128

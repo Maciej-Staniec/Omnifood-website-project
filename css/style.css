@@ -255,7 +255,7 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .tag {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
