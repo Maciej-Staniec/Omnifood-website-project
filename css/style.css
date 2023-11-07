@@ -10,7 +10,7 @@
   background-color: #fdf2e9;
   /* Because we want the header to be sticky later. */
   height: 9.6rem;
-  position:relative;
+  position: relative;
 }
 .logo {
   height: 2.2rem;
@@ -69,8 +69,8 @@ Check the Selector specifity of the following element by hovering over the selec
   color: #333;
 }
 
-.icon-mobile-nav[name="menu-outline"] {
-}
+/* .icon-mobile-nav[name="menu-outline"] {
+} */
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
@@ -176,7 +176,6 @@ Check the Selector specifity of the following element by hovering over the selec
   position: relative;
 }
 
-
 .step-img-box::before {
   content: "";
   display: block;
@@ -206,7 +205,6 @@ Check the Selector specifity of the following element by hovering over the selec
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .step-img {
   width: 35%;

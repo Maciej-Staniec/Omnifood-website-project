@@ -416,7 +416,10 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   }
 
   .cta-image-box {
+    /* The way we declared this element in the html code makes it invisible. It doesn't have any height. Before we changed the layout of grid to 1 column, it was side by side with the text box content. The text box content made it appear because the content had a height.*/
     height: 48rem;
+
+    /* Let's set the image to be in the first row so it appears before the form. */
     grid-row: 1;
   }
 }
@@ -493,7 +496,7 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   }
 
   .meal-title{
-    font-size:3.0rem;
+    font-size:2.4rem;
   }
 
   .meal-attributes{
@@ -584,11 +587,9 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   }
 
 }
-/*
-*********** 02. WHITESPACE ***********
+
+/* *********** 02. WHITESPACE ***********
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 *********** FONT SIZE SYSTEM (px) ***********
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-*/
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
