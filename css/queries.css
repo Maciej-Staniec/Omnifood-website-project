@@ -232,6 +232,8 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   /* MOBILE NAV */
   .btn-mobile-nav {
     display: block;
+    z-index:1;
+    background-color: rgb(255, 255, 255, 0.97);
   }
 
   .main-nav {
