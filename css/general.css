@@ -21,6 +21,9 @@ html {
   /* This only works if there is nothing absolutely positioned in relation to body. If there is an absolutely positioned element (like our .main-nav element), we need to set the "position" property to relative of its parent element (.header in this case). */
   /* It is often required to set this property on the html and body elements. */
   overflow-x: hidden;
+
+  /* Scroll-behaviour property only works for Google Chrome and Firefox. Luckily, for these browsers we don't need to write any javascript to reach smooth scrolling effect. Unfortunately, it won't work on the Safari web browser. The problem is that Safari is the only available browser on Apple products. Even google chrome on Apple's products still uses Safari rendering engine. As you probably know, those devices are nowadays one of most popular devices in the world.*/
+  /* scroll-behavior: smooth; */
 }
 
 body {

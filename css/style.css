@@ -69,6 +69,22 @@ Check the Selector specifity of the following element by hovering over the selec
   color: #333;
 }
 
+/* STICKY NAV */
+
+.sticky {
+  /* With position:fixed, the element is taken out of the flow - same as in position:absolute. */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 8rem;
+  width: 100%;
+  /* padding-top: 0;
+  padding-bottom: 0; */
+  background-color: rgb(255, 255, 255, 0.97);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+}
+
 /* .icon-mobile-nav[name="menu-outline"] {
 } */
 
