@@ -79,16 +79,32 @@ allLinks.forEach(function (link) {
 const sectionHeroEl = document.querySelector(".section-hero");
 
 const obs = new IntersectionObserver(
-  function (entries) {
+  function (
+    entries // The IntersectionObserver constructor accepts two arguments: A callback function (to perform actions when triggered on a specified element) and options object (second set of curly braces{}) where we can indicate conditions under which our callback function get triggered.
+  ) {
+    // As we are passing in only one element to observe (sectionHeroEl), the array of entries will contain only one element. The callback function accepts as many elements to observe as we want and we can loop through the array and change the behaviour of each entry (we can loop through entries based on their class/id name).
     const ent = entries[0];
-    console.log(ent);
+
+    // Our observer object has multiple properties that changes as we scroll the viewport (depending on what we set). Based on those properties, we can manipulate the logic of our callback function.
+    // One of those property is IsIntersecting. If the intersection observer object isn't intersecting at all our section-hero html element, then we want to show our sticky nav.
+    if (!ent.isIntersecting) {
+      console.log(ent);
+      document.body.classList.add("sticky");
+    } else {
+      document.body.classList.remove("sticky");
+    }
   },
+
+  // Object options define how the intersection observation behaves and when the callback function should be executed.
   {
-    // First thing is setting up the root - that is where this element should be appearing or not. Because we want to observe the hero-section inside the view port, we want to set the root to null
-    root: null,
+    // First thing is setting up the root - that is where this element should be appearing or not. Because we want to observe the hero-section inside the view port, we want to set the root to null.
     // Alternatively, we could specify a different html element as the root and only this element would be observed.
-    threshold: 1,
+    root: null,
     // treshold specifies when the element should appear? Once the whole section is on the screen or once we scroll to its beginning (anchor point? Setting it to 1 means "show sticky menu only if the whole her-section is visible.". 0 means "make it visible only if the user can't see the hero section at all".
+    //
+    threshold: 0,
+    // With rootMargin we can slighly change the treshold. To make sure the sticky nav won't cover the header of "featured-in" section, let's change its position of the appearance by an amount equal to its height (which is 8 rem in this case)
+    rootMargin: '-80px'
   }
 );
 obs.observe(sectionHeroEl);

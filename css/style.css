@@ -71,7 +71,7 @@ Check the Selector specifity of the following element by hovering over the selec
 
 /* STICKY NAV */
 
-.sticky {
+.sticky .header {
   /* With position:fixed, the element is taken out of the flow - same as in position:absolute. */
   position: fixed;
   top: 0;
@@ -83,6 +83,11 @@ Check the Selector specifity of the following element by hovering over the selec
   background-color: rgb(255, 255, 255, 0.97);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
   z-index: 9999;
+}
+
+.sticky .section-hero {
+  /* to fix the jump effect, we need to add margin to the top of the section hero only if sticky class has been added to its parent element. */
+  margin-top: 9.6rem;
 }
 
 /* .icon-mobile-nav[name="menu-outline"] {
