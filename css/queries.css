@@ -229,7 +229,10 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   }
 
   .main-nav {
-    background-color: rgb(255, 255, 255, 0.97);
+    background-color: rgb(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    /* Prefix for Supporting safari */
+    -webkit-backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
@@ -572,5 +575,88 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 
   .margin-right-sm {
     margin-right: 0px !important;
+  }
+}
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .delivered-imgs {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-text {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .list-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 67.5em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .no-flex-gap .step-text-box {
+    margin-right: 4.8rem;
+  }
+
+  .no-flex-gap .step-text-box:nth-child(2) {
+    margin-left: 4.8rem;
+    margin-right: 0;
+  }
+
+  .no-flex-gap .step-text-box:not(:last-child) {
+    margin-bottom: 6.4rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
   }
 }

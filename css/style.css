@@ -233,7 +233,7 @@ Check the Selector specifity of the following element by hovering over the selec
 
 .step-number {
   font-size: 8.6rem;
-  color: #ddd;
+  color: #aaa;
   font-weight: 600;
   margin-bottom: 1.2rem;
 }
@@ -275,7 +275,7 @@ Check the Selector specifity of the following element by hovering over the selec
 
 .tag {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   display: inline-block;
   padding: 0.4rem 0.8rem;
@@ -283,15 +283,15 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .tag--vegetarian {
-  background-color: #51cf66;
+  background-color: #93ff8a;
 }
 
 .tag--vegan {
-  background-color: #94d82d;
+  background-color: #b6f655;
 }
 
 .tag--paleo {
-  background-color: #ffd43b;
+  background-color: #fff599;
 }
 
 .meal-title {
@@ -682,7 +682,12 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .address {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+.contacts p:nth-child(2),
+.contacts p:nth-child(3) {
+  margin: 1rem 0;
 }
 
 /* 

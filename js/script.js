@@ -104,7 +104,26 @@ const obs = new IntersectionObserver(
     //
     threshold: 0,
     // With rootMargin we can slighly change the treshold. To make sure the sticky nav won't cover the header of "featured-in" section, let's change its position of the appearance by an amount equal to its height (which is 8 rem in this case)
-    rootMargin: '-80px'
+    rootMargin: "-80px",
   }
 );
 obs.observe(sectionHeroEl);
+
+// Fixing flexbox gap property missing in some safari versions
+function checkFlexGap() {
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
+
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
+
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
+
+  if (!isSupported) document.body.classList.add("no-flexbox-gap");
+}
+checkFlexGap();
