@@ -80,8 +80,9 @@ Check the Selector specifity of the following element by hovering over the selec
   width: 100%;
   /* padding-top: 0;
   padding-bottom: 0; */
-  background-color: rgb(255, 255, 255, 0.97);
+  background-color: rgb(255, 255, 255, 0.93);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(5px);
   z-index: 9999;
 }
 
@@ -191,6 +192,13 @@ Check the Selector specifity of the following element by hovering over the selec
 /*******************************/
 
 .step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box picture {
   display: flex;
   align-items: center;
   justify-content: center;
