@@ -199,10 +199,7 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .step-img-box picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  text-align: center;
 }
 
 .step-img-box::before {
@@ -236,7 +233,7 @@ Check the Selector specifity of the following element by hovering over the selec
 }
 
 .step-img {
-  width: 35%;
+  max-width: 50%;
 }
 
 .step-number {

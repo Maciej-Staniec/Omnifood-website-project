@@ -41,6 +41,10 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   html {
     font-size: 56.25%;
   }
+
+  .step-img {
+    max-width: 45%;
+  }
 }
 
 /*******************************/
@@ -77,6 +81,16 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 
   .step-number {
     font-size: 7.4rem;
+  }
+
+  .step-img-box::before {
+    width: 65%;
+    padding-top: 65%;
+  }
+
+  .step-img-box::after {
+    width: 50%;
+    padding-top: 50%;
   }
 
   .testimonials {
@@ -168,17 +182,18 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 
   .step-img {
     width: 50%;
+    height: 60%;
   }
 
-  .step-img-box::before {
+  /* .step-img-box::before {
     width: 75%;
     padding-top: 75%;
-  }
+  } */
 
-  .step-img-box::after {
+  /* .step-img-box::after {
     width: 60%;
     padding-top: 60%;
-  }
+  } */
 
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem;
@@ -296,6 +311,26 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 }
 
 /*******************************/
+/* BELOW 835 px */
+/*******************************/
+
+@media (max-width: 52.1875em) {
+  .step-img-box::before {
+    width: 80%;
+    padding-top: 80%;
+  }
+
+  .step-img-box::after {
+    width: 65%;
+    padding-top: 65%;
+  }
+
+  .step-img {
+    min-width: 55%;
+  }
+}
+
+/*******************************/
 /* BELOW 708 px */
 /* SMALLER TABLETS */
 /*******************************/
@@ -315,19 +350,19 @@ In order to calculate the em value, we have to divide the desired max-width by 1
     width: 85%;
   }
 
-  .step-img {
-    width: 65%;
-  }
+  /* .step-img {
+    width: 100%;
+  } */
 
-  .step-img-box::before {
+  /* .step-img-box::before {
     width: 90%;
     padding-top: 90%;
-  }
+  } */
 
-  .step-img-box::after {
+  /* .step-img-box::after {
     width: 75%;
     padding-top: 75%;
-  }
+  } */
 
   .diets {
     grid-column: 1/-1;
@@ -383,6 +418,21 @@ In order to calculate the em value, we have to divide the desired max-width by 1
   }
 
   /* Even if the element appears to be 1st img in the html code, it is a 2nd element in its parent element. Therefore we need to choose the 2nd element. */
+
+  .step-img-box::before {
+    width: 60%;
+    padding-top: 60%;
+  }
+
+  .step-img-box::after {
+    width: 45%;
+    padding-top: 45%;
+  }
+
+  .step-img {
+    min-width: 50%;
+  }
+
   .step-img-box:nth-child(2) {
     grid-row: 1;
   }
@@ -393,20 +443,6 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 
   .logos img {
     height: 2rem;
-  }
-
-  .step-img {
-    width: 35%;
-  }
-
-  .step-img-box::before {
-    width: 60%;
-    padding-top: 60%;
-  }
-
-  .step-img-box::after {
-    width: 45%;
-    padding-top: 45%;
   }
 
   .cta {
@@ -479,6 +515,20 @@ In order to calculate the em value, we have to divide the desired max-width by 1
 
   .section-featured {
     padding: 4.8rem 0 0;
+  }
+
+  .step-img-box::before {
+    width: 80%;
+    padding-top: 80%;
+  }
+
+  .step-img-box::after {
+    width: 65%;
+    padding-top: 65%;
+  }
+
+  .step-img {
+    min-width: 60%;
   }
 
   .diet-list {
